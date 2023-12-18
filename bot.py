@@ -6,27 +6,7 @@ TOKEN = '6081435766:AAHhe5mz8Os9kW9piTNptza0kh2XdauVt_w'
 bot = telebot.TeleBot(TOKEN)
 
 
-@bot.message_handler(commands=['start'])
-def start(message):
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
 
-    item1 = types.KeyboardButton('Отчетность продюсеров')
-    markup.row(item1)
-    item2 = types.KeyboardButton('Регламент продюсера')
-    markup.row(item2)
-    item3 = types.KeyboardButton('Адреса склада и офиса')
-    item4 = types.KeyboardButton('Камерапланы')
-    item8 = types.KeyboardButton('Контакты')
-    markup.add(item8)
-    item5 = types.KeyboardButton('Доп материал')
-    item6 = types.KeyboardButton('Обратная связь')
-    item7 = types.KeyboardButton('Саппорт')
-    markup.row(item6, item7)
-    item8 = types.KeyboardButton('Компенсация')
-    markup.add(item8)
-    markup.row(item3, item4, item5)
-
-    bot.send_message(message.chat.id, 'Привет {0.first_name}, нажми на кнопку'.format(message.from_user), reply_markup=markup)
 
 
 @bot.message_handler(content_types=['text'])
