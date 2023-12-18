@@ -180,11 +180,7 @@ def bot_message(message):
         bot.send_message(message.chat.id, 'Выбери то, что тебя  интересует', reply_markup=markup)
 
 
-    elif message.text == 'Контакты':
-        bot.send_message(message.chat.id, 'Введи Имя Фамилию. Пример: Иван Иванов')
-    elif message.text == 'Максим Гущин':
-        bot.send_message(message.chat.id, '+79852454641')
-
+   
 
     
 
