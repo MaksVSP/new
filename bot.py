@@ -80,12 +80,7 @@ def bot_message(message):
         bot.send_message(message.chat.id, 'Нажми назад', reply_markup=markup)
 
 
-    #elif message.text == 'Логистика и бюджет':
-    #    markup = types.ReplyKeyboardMarkup()
-    #    file = open('./1233.png', 'rb')
-     #   bot.send_photo(message.chat.id, file, reply_markup=markup)
-
-    #    bot.send_message(message.chat.id, 'Нажми назад', reply_markup=markup)
+   
 
 
 
